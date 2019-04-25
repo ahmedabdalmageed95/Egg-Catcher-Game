@@ -1,0 +1,417 @@
+﻿body
+{
+    font-family: cursive;
+    background-color: #eee;
+}
+.center {
+    margin: auto;
+    display: block
+}
+#topBar {
+	position: absolute;
+	top: 0px;
+	height: 55px;
+	left: 254px;
+	z-index: 1;
+	width: 830px;
+	visibility: hidden;
+}
+#basket {
+    position: absolute;
+    top: 539px;
+    left: 300px;
+    z-index: 1;
+    visibility: hidden;
+}
+#username {
+	position: absolute;
+	left: 500px;
+	top: 70px;
+	height: 100px;
+	width: 350px;
+	z-index: 1;
+	font-size:30px;
+	padding:0px 13px;
+	color:black;
+    background-color: #eee;
+    border: 3px solid #ddd;
+    border-radius: 5px 20px 5px;
+}
+#userSpan {
+	position: absolute;
+	left: 531px;
+	top: 6px;
+	z-index: 1;
+	font-size: 20px;
+	color:yellow;
+	font-weight:bold;
+}
+#bird1,
+#bird2,
+#bird3 {
+	position: absolute;
+	left: 300px;
+	/*maxLeft:930;*/
+	visibility: visible;
+	z-index: 2;
+	visibility: hidden;
+}
+
+#bird1 {
+    left: 300px;
+    /*maxLeft:930;*/
+    top: 40px;
+}
+
+#bird2 {
+    left: 600px;
+    /*maxLeft:930;*/
+    top: 80px;
+}
+
+#bird3 {
+    left: 880px;
+    /*maxLeft:930;*/
+    top: 120px;
+}
+
+#pause {
+	border-radius: 12px;
+	font-size: 18px;
+	position: absolute;
+	top: 7px;
+	/*left: 1018px;*/
+	left: 303px;
+	color: #639C11;
+	background-color: #eee;
+	visibility: hidden;
+	z-index: 1;
+	-webkit-box-shadow: 0px 0px 63px -15px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 63px -15px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 63px -15px rgba(0,0,0,0.75);
+}
+
+#start,
+#restart,
+#resume,
+#targetMessages,
+#GameOverMessages,
+#NormalMode,
+#HardMode{
+    position: absolute;
+    font-size: 70px;
+    left: 475px;
+    -webkit-box-shadow: 0px 0px 88px 35px #225007;
+    -moz-box-shadow: 0px 0px 88px 35px #225007;
+    box-shadow: 0px 0px 88px 35px #225007;
+    background-color: #EEE;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+}
+
+#start {
+    top: 280px;
+    visibility:hidden;
+}
+
+#resume {
+    top: 185px;
+    left: 500px;
+    visibility: hidden;
+    width: 30%;
+}
+#restart,
+#GameOverMessages {
+    top: 380px;
+    left: 500px;
+    visibility: hidden;
+}
+#restart
+{
+    width: 30%;
+    left: 500px
+}
+
+#start:hover,
+#restart:hover,
+#resume:hover,
+#GameOverMessages:hover,
+#NormalMode:hover,
+#HardMode:hover,
+#question:hover
+{
+    transition-duration: 0.3s;
+    -webkit-box-shadow: 0px 0px 50px 30px green;
+    -moz-box-shadow: 0px 0px 50px 30px green;
+    box-shadow: 0px 0px 50px 30px green;
+}
+#GameOverMessages:hover
+{
+    transition-duration: 0.3s;
+    -webkit-box-shadow: 0px 0px 50px 30px red;
+    -moz-box-shadow: 0px 0px 50px 30px red;
+    box-shadow: 0px 0px 50px 30px red; 
+}
+
+#farm {
+    filter: blur(5px);
+    z-index: 100;
+    top: 8px;
+    left: 295px;
+}
+#farm2 {
+	filter: blur(5px);
+	z-index: -100;
+	position: absolute;
+	top: 8px;
+	left: 295px;
+}
+#NormalMode,
+#HardMode,#question
+{
+    left: 500px;
+    margin-bottom:200px;
+    display:block;
+    font-weight: 700;
+    margin-bottom: 200px;
+    display: block;
+    width: 28%;
+    font-size: 32px;
+    background-color: #eee;
+    border: 5px solid #ddd;
+    font-family: cursive;
+}
+#NormalMode
+{
+    top:250px;
+}
+#HardMode {
+	margin-bottom: 0px;
+	top: 350px;
+	
+}
+/*_______________________________________________________________*/
+#egg1,
+#egg2,
+#egg3,
+#goldenegg,
+#blackegg {
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    z-index: 3;
+    visibility: hidden;
+}
+
+#egg1 {
+    left: 300px;
+}
+
+#egg2 {
+    left: 600px;
+}
+
+#egg3 {
+    left: 880px;
+}
+
+
+#targetMessages,
+#GameOverMessages,
+.stopWatch,
+.stopWatch2 {
+    position: absolute;
+    font-size: large;
+	z-index:1
+}
+
+
+
+#numberOfAgges, #TargetEgges {
+	font-size: x-large;
+	font-weight: bold;
+	color: red;
+}
+#TargetEgges{
+	position:absolute;
+	left:848px;
+	top:6px;
+	z-index:1;
+	font-size:20px;
+	color:yellow;
+	visibility:hidden;
+}
+#numberOfAgges {
+	left: 768px;
+	top: 6px;
+	z-index: 1;
+	position: absolute;
+	font-size: 20px;
+	color: yellow;
+	visibility: hidden;
+}
+#targetMessages,
+#GameOverMessages {
+	top: 160px;
+	left: 490px;
+	padding: 20px;
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	font-size: xx-large;
+}
+#GameOverMessages {
+    font-size: 31px;
+    width: 27%;
+    left: 500px;
+    top: 200px;
+    font-weight: 900;
+    color: red;
+	visibility:hidden;
+}
+#targetMessages
+{
+    color: green;
+    visibility:hidden;
+}
+
+
+#howTo {
+    position: absolute;
+    width: 285px;
+    height: 513px;
+    left: 0px;
+}
+
+#farm {
+    filter: blur(5px);
+    z-index: 100;
+    width: 776px;
+    height: 600px;
+}
+
+#farm2 {
+    filter: blur(5px);
+    z-index: -100;
+    position: absolute;
+    top: 8px;
+    left: 295px;
+    width: 776px;
+    height: 600px;
+}
+.stopWatch,
+.stopWatch2 {
+    top: 1px;
+    right: 200px;
+    font-size: xx-large;
+}
+
+.stopWatch2 {
+    top: 50px;
+}
+
+/*//////////////////////////////*/
+
+
+/*// TIMER*/
+
+
+.timer {
+	width: 219px;
+	font: bold 48px 'Droid Sans', Arial, sans-serif;
+	text-align: center;
+	color: #111;
+	background-color: #ddd;
+	background-image: -webkit-linear-gradient(top, #bbb, #eee);
+	background-image: -moz-linear-gradient(top, #bbb, #eee);
+	background-image: -o-linear-gradient(top, #bbb, #eee);
+	border-top: 1px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+	margin: 0 7px;
+	padding: 18px 0;
+	display: inline-block;
+	position: absolute;
+	right: -177px;
+	top:120px;
+}
+#timer2{
+	top:200px;
+}
+
+.timer:before {
+	content: "";
+	width: 100%;
+	height: 13px;
+	background: #111;
+	display: block;
+	padding: 0 3px;
+	position: absolute;
+	top: 41%;
+	left: -3px;
+	z-index: -1;
+}
+
+.timer:after {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #eee;
+	border-top: 1px solid #333;
+	display: block;
+	position: absolute;
+	top: 48%;
+	left: 0;
+}
+#question
+{
+    border-right: 30px 30px 30px 30px;
+    position: absolute;
+    top: 345px;
+    left: 505px;
+    width: 30%;
+    font-size: larger;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 4px 15px 4px;
+    background-color:#eee;
+}
+#Cancel,
+#Ok
+{
+    position: absolute;
+    width: 10%;
+    top: 420px;
+    font-size: medium;
+    text-align: center;
+    border-color: #ddd;
+    background-color:#eee;
+}
+#Cancel
+{
+    left: 710px;
+    border-radius: 10px 3px 10px;
+}
+#Cancel:hover
+{
+    transition-duration: 0.3s;
+    -webkit-box-shadow: 0px 0px 20px 10px red;
+    -moz-box-shadow: 0px 0px 20px 10px red;
+    box-shadow: 0px 0px 20px 10px red; 
+}
+#Ok
+{
+    left: 560px;
+    border-radius: 3px 10px 3px;
+}
+#Ok:hover
+{
+    transition-duration: 0.3s;
+    -webkit-box-shadow: 0px 0px 20px 10px green;
+    -moz-box-shadow: 0px 0px 20px 10px green;
+    box-shadow: 0px 0px 20px 10px green; 
+}
+#CustomConfirm
+{
+	visibility:hidden;
+}

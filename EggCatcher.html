@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<img id="topBar" src="imgs/topBar.png" />
+    <img id="howTo" src="imgs/howto.png" />
+	<div id="gameContent">
+		<input type="text" id="username" placeholder="Enter Your Name to Start" />
+		<span id="userSpan"></span>
+		<span id="numberOfAgges"></span>
+		<span id="TargetEgges"></span>
+		<img id="egg1" src="imgs/WhiteEggs.png" />
+		<img id="egg2" src="imgs/WhiteEggs.png" />
+		<img id="egg3" src="imgs/WhiteEggs.png" />
+		<img id="blackegg" src="imgs/BlackEggs.png">
+		<img id="goldenegg" src="imgs/GoldenEggs.png">
+		<img src="imgs/basket.png" id="basket" />
+		<img src="imgs/bird.gif" class="center" id="bird1" />
+		<img src="imgs/bird.gif" class="center" id="bird2" />
+		<img src="imgs/bird.gif" class="center" id="bird3" />
+		<img src="imgs/farm.jpg" alt="farm" class="center" id="farm" />
+		<img src="imgs/farm2.jpg" alt="farm2" class="center" id="farm2" />
+		<button id="pause"><b>||</b></button>
+		<button id="start">Start Game</button>
+		<button id="NormalMode">Normal Mode</button>
+		<button id="HardMode">Hard Mode</button>
+
+		<button id="resume">Resume</button>
+		<button id="restart">Restart</button>
+        <p id="targetMessages">wow wow target is done in <br /><span id="timeCounter"></span> seconds</p>
+		<div id="CustomConfirm">
+			<p id="question">Do you Want to play again?</p>
+			<button id="Ok">Ok</button>
+			<button id="Cancel">Cancel</button>
+		</div>
+		<p id="GameOverMessages">Game Over</p>
+
+		<div class="stopWatch">
+			<p id="timer" class="timer"></p>
+
+		</div>
+		<div class="stopWatch2">
+			<p id="timer2" class="timer">00:00:00</p>
+		</div>
+	</div>
+
+    <!--Audio zika-->
+    <audio id="audioStartGame" src="sound\Rooster-crowing-in-the-morning.mp3"></audio>
+    <audio id="BirdSound" src="sound\Falcon-Mark_Mattingly-169493032.mp3"></audio>
+    <audio id="eatEgg" src="sound\Hr_coin.mp3"></audio>
+    <audio id="targetSound" src="sound\Hr_unlock.mp3"></audio>
+    <audio id="GameOverSound" src="sound\mysteryBoxOpen.mp3"></audio>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
